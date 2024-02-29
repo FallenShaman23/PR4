@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Конвертор валют" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="162,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="162,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem IsSelected="True" >RUB</ComboBoxItem>
             <ComboBoxItem>USD</ComboBoxItem>
             <ComboBoxItem>EUR</ComboBoxItem>
@@ -17,7 +17,7 @@
             <ComboBoxItem>JPY</ComboBoxItem>
             <ComboBoxItem>TRY</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Margin="466,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Margin="466,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
             <ComboBoxItem IsSelected="True">RUB</ComboBoxItem>
             <ComboBoxItem>USD</ComboBoxItem>
             <ComboBoxItem>EUR</ComboBoxItem>
@@ -33,6 +33,7 @@
         <Label Content="Выберите итоговую валюту" HorizontalAlignment="Left" Margin="299,27,0,0" VerticalAlignment="Top"/>
         <Label Content="Сумма:" HorizontalAlignment="Left" Margin="301,58,0,0" VerticalAlignment="Top"/>
         <Label Content="00000000000000000000000000000000000" x:Name="konvert" HorizontalAlignment="Left" Margin="345,59,0,0" VerticalAlignment="Top" Width="241"/>
+        <Button x:Name="Button1" Content="Перевести" HorizontalAlignment="Left" Margin="49,102,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

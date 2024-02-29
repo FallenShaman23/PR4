@@ -1,0 +1,15 @@
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.csproj.AssemblyReference.cache
+C:\Wp123\PR4\Practic4\obj\Debug\MainWindow.g.cs
+C:\Wp123\PR4\Practic4\obj\Debug\App.g.cs
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4_MarkupCompile.cache
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4_MarkupCompile.lref
+C:\Wp123\PR4\Practic4\bin\Debug\Practic4.exe.config
+C:\Wp123\PR4\Practic4\bin\Debug\Practic4.exe
+C:\Wp123\PR4\Practic4\bin\Debug\Practic4.pdb
+C:\Wp123\PR4\Practic4\obj\Debug\MainWindow.baml
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.g.resources
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.Properties.Resources.resources
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.csproj.GenerateResource.cache
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.csproj.CoreCompileInputs.cache
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.exe
+C:\Wp123\PR4\Practic4\obj\Debug\Practic4.pdb
