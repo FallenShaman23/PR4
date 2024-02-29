@@ -5,35 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practic4"
         mc:Ignorable="d"
-        Title="Конвертор валют" Height="450" Width="800" ResizeMode="NoResize">
+        Title="Конвертор валют" Height="427" Width="488" ResizeMode="NoResize" Icon="/pngwing.com.png" >
     <Grid>
-        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="162,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem IsSelected="True" >RUB</ComboBoxItem>
-            <ComboBoxItem>USD</ComboBoxItem>
-            <ComboBoxItem>EUR</ComboBoxItem>
-            <ComboBoxItem>BYN</ComboBoxItem>
-            <ComboBoxItem>AED</ComboBoxItem>
-            <ComboBoxItem>PLN</ComboBoxItem>
-            <ComboBoxItem>JPY</ComboBoxItem>
-            <ComboBoxItem>TRY</ComboBoxItem>
+        <Image Source="/Image1.png" Stretch="Fill" Opacity="0.9" HorizontalAlignment="Left" Width="772" Height="544" VerticalAlignment="Top"/>
+        <Border BorderBrush="White" CornerRadius="15" BorderThickness="1" Margin="0,43,0,0" Background="White" Opacity="0.6" HorizontalAlignment="Center" Width="434" Height="358" VerticalAlignment="Top">
+            <Image Margin="88,18,300,301" Source="/pngwing.com.png" Stretch="Fill" OpacityMask="White"/>
+        </Border>
+        <Border BorderBrush="#FFA76464" CornerRadius="20" BorderThickness="1" Margin="0,114,0,0" Opacity="0.8" HorizontalAlignment="Center" Width="408" Height="265" VerticalAlignment="Top">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC1FFF8" Offset="0"/>
+                    <GradientStop Color="#FFF98187" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Image Margin="298,44,73,185" Source="/icons8-поменять-местами-50.png" Stretch="Fill"/>
+
+        </Border>
+
+        <ComboBox FontFamily="Comic Sans MS" x:Name="ComboBox1" HorizontalAlignment="Left" Margin="284,133,0,0" VerticalAlignment="Top" Width="146"  SelectionChanged="ComboBox_SelectionChanged" BorderBrush="#FFF3F3F3" Background="White" FontWeight="Bold">
+            <ComboBoxItem IsSelected="True" Content="RUB" />
+            <ComboBoxItem Content="USD"/>
+            <ComboBoxItem Content="EUR"/>
+            <ComboBoxItem Content="BYN"/>
+            <ComboBoxItem Content="AED"/>
+            <ComboBoxItem Content="PLN"/>
+            <ComboBoxItem Content="JPY"/>
+            <ComboBoxItem Content="TRY"/>
         </ComboBox>
-        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Margin="466,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
-            <ComboBoxItem IsSelected="True">RUB</ComboBoxItem>
-            <ComboBoxItem>USD</ComboBoxItem>
-            <ComboBoxItem>EUR</ComboBoxItem>
-            <ComboBoxItem>BYN</ComboBoxItem>
-            <ComboBoxItem>AED</ComboBoxItem>
-            <ComboBoxItem>PLN</ComboBoxItem>
-            <ComboBoxItem>JPY</ComboBoxItem>
-            <ComboBoxItem>TRY</ComboBoxItem>
+        <ComboBox FontFamily="Comic Sans MS" x:Name="ComboBox2" Margin="284,203,0,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged_1" FontWeight="Bold" HorizontalAlignment="Left" Width="146">
+            <ComboBoxItem IsSelected="True" Content="RUB"/>
+            <ComboBoxItem Content="USD"/>
+            <ComboBoxItem Content="EUR"/>
+            <ComboBoxItem Content="BYN"/>
+            <ComboBoxItem Content="AED"/>
+            <ComboBoxItem Content="PLN"/>
+            <ComboBoxItem Content="JPY"/>
+            <ComboBoxItem Content="TRY"/>
         </ComboBox>
-        <TextBox HorizontalAlignment="Left" x:Name="Summa" Margin="118,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" TextChanged="Summa_TextChanged"/>
-        <Label Content="Введите сумму:" HorizontalAlignment="Left" Margin="19,58,0,0" VerticalAlignment="Top"/>
-        <Label Content="Выберите вашу валюту" HorizontalAlignment="Left" Margin="19,27,0,0" VerticalAlignment="Top"/>
-        <Label Content="Выберите итоговую валюту" HorizontalAlignment="Left" Margin="299,27,0,0" VerticalAlignment="Top"/>
-        <Label Content="Сумма:" HorizontalAlignment="Left" Margin="301,58,0,0" VerticalAlignment="Top"/>
-        <Label Content="00000000000000000000000000000000000" x:Name="konvert" HorizontalAlignment="Left" Margin="345,59,0,0" VerticalAlignment="Top" Width="241"/>
-        <Button x:Name="Button1" Content="Перевести" HorizontalAlignment="Left" Margin="49,102,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" x:Name="Summa" Margin="195,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235" TextChanged="Summa_TextChanged"/>
+        <Label  FontFamily="Comic Sans MS" Content="Введите сумму:" HorizontalAlignment="Left" Margin="53,236,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label  FontFamily="Comic Sans MS" Content="Выберите вашу валюту" HorizontalAlignment="Left" Margin="56,128,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label  FontFamily="Comic Sans MS" Content="Выберите итоговую валюту" HorizontalAlignment="Left" Margin="53,199,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label FontFamily="Comic Sans MS" Content="Итого:" HorizontalAlignment="Left" Margin="53,0,0,32" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label  FontFamily="Comic Sans MS" Content="" x:Name="konvert" HorizontalAlignment="Left" Margin="103,330,0,0" VerticalAlignment="Top" Width="241" FontWeight="Bold"/>
+        <Button FontFamily="Comic Sans MS" x:Name="Button1" Content="Перевести" HorizontalAlignment="Left" Margin="260,272,0,0" VerticalAlignment="Top" Width="126" Background="#FFC7C3E0" FontWeight="Bold" Height="26"/>
+        <Label  FontFamily="Comic Sans MS" Content="CONVERTER" HorizontalAlignment="Left" Margin="181,69,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Foreground="#FF532358"/>
 
     </Grid>
 </Window>

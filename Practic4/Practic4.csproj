@@ -94,5 +94,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-стрелка-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-поменять-местами-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
