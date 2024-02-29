@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practic4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Конвертор валют" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        
+        <ComboBox HorizontalAlignment="Left" Margin="162,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem IsSelected="True" >RUB</ComboBoxItem>
+            <ComboBoxItem>USD</ComboBoxItem>
+            <ComboBoxItem>EUR</ComboBoxItem>
+            <ComboBoxItem>BYN</ComboBoxItem>
+            <ComboBoxItem>AED</ComboBoxItem>
+            <ComboBoxItem>PLN</ComboBoxItem>
+            <ComboBoxItem>JPY</ComboBoxItem>
+            <ComboBoxItem>TRY</ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="466,31,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBoxItem IsSelected="True">RUB</ComboBoxItem>
+            <ComboBoxItem>USD</ComboBoxItem>
+            <ComboBoxItem>EUR</ComboBoxItem>
+            <ComboBoxItem>BYN</ComboBoxItem>
+            <ComboBoxItem>AED</ComboBoxItem>
+            <ComboBoxItem>PLN</ComboBoxItem>
+            <ComboBoxItem>JPY</ComboBoxItem>
+            <ComboBoxItem>TRY</ComboBoxItem>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" x:Name="Summa" Margin="118,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" TextChanged="Summa_TextChanged"/>
+        <Label Content="Введите сумму:" HorizontalAlignment="Left" Margin="19,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выберите вашу валюту" HorizontalAlignment="Left" Margin="19,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выберите итоговую валюту" HorizontalAlignment="Left" Margin="299,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сумма:" HorizontalAlignment="Left" Margin="301,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="00000000000000000000000000000000000" x:Name="konvert" HorizontalAlignment="Left" Margin="345,59,0,0" VerticalAlignment="Top" Width="241"/>
+
     </Grid>
 </Window>
